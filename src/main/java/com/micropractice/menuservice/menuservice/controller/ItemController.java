@@ -21,8 +21,8 @@ public class ItemController {
     }
 
     @PostMapping
-    public void saveOrUpdate (@RequestBody Item item){
-        itemService.saveOrUpdate(item);
+    public Item saveOrUpdate (@RequestBody Item item){
+        return itemService.saveOrUpdate(item);
     }
 
     @GetMapping("/{itemId}")

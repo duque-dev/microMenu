@@ -23,8 +23,8 @@ public class ItemService {
         return itemRepository.findById(id);
     }
 
-    public void saveOrUpdate (Item item){
-        itemRepository.save(item);
+    public Item saveOrUpdate (Item item){
+       return itemRepository.save(item);
     }
 
     public void deletetemById (Long id){
